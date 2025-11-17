@@ -1,0 +1,21 @@
+.unordered-list {
+  background-color: cadetblue;
+}
+body {
+  background-color: rgb(12, 92, 65);
+}
+
+.header-container {
+  background-image: url("../assets/pizza-background.jpg");
+  height: 300px;
+  padding-top: 150px;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  background-color: brown;
+}
+.pet-names {
+  background-color: chartreuse;
+}
