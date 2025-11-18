@@ -1,0 +1,57 @@
+/* these are the default styles for mobile first  */
+body {
+  background-color: rgb(4, 70, 70);
+}
+header {
+  background-color: blue;
+}
+section {
+  border: 1px solid white;
+  margin: 10px;
+  width: 30%;
+}
+section img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+main {
+  background-color: rgb(124, 128, 7);
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  width: 100%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* here is where we make our break point for bigger than 400px wide */
+@media screen and (min-width: 400px) {
+  header {
+    background-color: blueviolet;
+  }
+}
+
+/* here is where we make our break point for bigger than 400px wide */
+@media screen and (max-width: 900px) {
+  header {
+    background-color: green;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  section img {
+    height: 50px;
+    width: 50px;
+  }
+  #big-pet-image {
+    display: none;
+  }
+}
