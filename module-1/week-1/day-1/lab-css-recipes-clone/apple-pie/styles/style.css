@@ -33,6 +33,44 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
-body {
-  background-color: aqua;
+
+header {
+  background-image: url("../images/apple-pie.jpg");
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+}
+h1 {
+  padding: 120px;
+  color: aliceblue;
+}
+h3 {
+  margin: 10px;
+}
+main {
+  width: 80%;
+  margin: 30px 0px 20px 40px;
+  padding: 10px 0px;
+}
+.cooking-image {
+  width: 70%;
+  margin: 30px 0px 20px 60px;
+}
+.line-break {
+  background-color: gray;
+  height: 2px;
+}
+/* hr {
+  background-color: black;
+} */
+ul {
+  list-style-type: "-";
+  margin-left: 20px;
+}
+ol > li {
+  list-style: none;
+  counter-increment: counter;
+}
+ol > li:before {
+  content: counter(counter) "). ";
 }
