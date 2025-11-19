@@ -1,0 +1,86 @@
+/*
+background purple: #540B51
+background ivory: #F3EAE2
+button blue: #4285F4
+titles black: #191817
+paragraph black: #000000
+paragraph yellow: #ECB12F
+links blue: #2E71A6
+footer links grey: #454245
+*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #540b51;
+}
+#big-image {
+  width: 80%;
+}
+#navbar-list {
+  display: none;
+}
+.logos img {
+  height: 50px;
+}
+.slack-logo {
+  height: 50px;
+  margin: 30px;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 80%;
+}
+#header-container {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#header-container p {
+  font-size: 1.7rem;
+}
+#header-container p span {
+  color: #ecb12f;
+}
+.navbar-buttons-container button {
+  background-color: #540b51;
+  border: none;
+}
+#signup-button-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#signup-button-container button {
+  height: 4rem;
+  width: 100%;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #540b51;
+}
+#signup-button-container button img {
+  height: 80%;
+}
+#signup-button-container #google-button {
+  background-color: #4285f4;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#signup-button-container #google-button img {
+  background-color: aliceblue;
+}
