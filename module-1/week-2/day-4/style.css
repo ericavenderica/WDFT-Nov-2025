@@ -1,0 +1,23 @@
+.start {
+  background-color: green;
+  border: none;
+}
+
+.stop {
+  background-color: red;
+}
+
+#toast-container {
+  background-color: rgb(3, 57, 57);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  /* display: none; */
+}
+#close-toast {
+  cursor: pointer;
+  background-color: red;
+}
