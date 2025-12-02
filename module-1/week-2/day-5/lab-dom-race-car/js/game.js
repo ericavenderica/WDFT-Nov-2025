@@ -3,6 +3,7 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.endScreen = document.getElementById("game-end");
+    this.highScoreContainer = document.getElementById("high-scores");
     this.player = new Player(this.gameScreen, 285, 400, 130, 240);
     this.height = 600;
     this.width = 500;
@@ -64,6 +65,13 @@ class Game {
         //subtract one life
         this.lives--;
         this.livesElement.innerText = this.lives;
+
+        //spin the player car when hit
+        this.player.element.classList.add("spin");
+        //remove the class of spin after .5 seconds
+        setTimeout(() => {
+          this.player.element.classList.remove("spin");
+        }, 500);
         if (this.lives === 0) {
           this.gameIsOver = true;
         }
@@ -109,5 +117,27 @@ class Game {
     //hide the game screen
     this.gameScreen.style.display = "none";
     this.endScreen.style.display = "block";
+
+    //this is for the high scores stored in the local storage
+    const highScoresFromLS = JSON.parse(localStorage.getItem("high-scores"));
+    if (!highScoresFromLS) {
+      localStorage.setItem("high-scores", JSON.stringify([this.score]));
+    } else {
+      //this adds the score from the last game
+      highScoresFromLS.push(this.score);
+      //this sorts in desc values
+      highScoresFromLS.sort((a, b) => b - a);
+      const topThreeScores = highScoresFromLS.splice(0, 3);
+      //this changes the value in the local storage to be the new array
+      localStorage.setItem("high-scores", JSON.stringify(topThreeScores));
+
+      //this will visually update the game over page to show the three scores
+      topThreeScores.forEach((oneScore) => {
+        //create an li element
+        const ourLiElement = document.createElement("li");
+        ourLiElement.innerText = oneScore;
+        this.highScoreContainer.appendChild(ourLiElement);
+      });
+    }
   }
 }

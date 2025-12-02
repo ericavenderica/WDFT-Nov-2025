@@ -10,7 +10,6 @@ window.onload = function () {
   });
   //these are the keyboard event listeners
   window.addEventListener("keydown", (event) => {
-    console.log("a key was pressed", event);
     if (event.code === "ArrowLeft") {
       ourGame.player.directionX = -4;
     }

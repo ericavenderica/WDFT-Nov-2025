@@ -9,6 +9,7 @@ class Player {
     this.directionY = 0;
     //this is all for the <img /> tag of our player
     this.element = document.createElement("img");
+
     this.element.src = "../images/car.png";
     this.element.style.position = "absolute";
     //these set the size of our car
