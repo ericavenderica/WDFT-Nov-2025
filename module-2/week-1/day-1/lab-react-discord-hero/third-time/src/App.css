@@ -1,0 +1,62 @@
+body {
+  background-color: blue;
+  color: white;
+}
+main {
+  width: 75%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  padding: 0 20px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  height: 40%;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+#btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#btn-container button {
+  border: none;
+  margin: 5px;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#btn-container .discord-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#background-image {
+  position: absolute;
+  bottom: 0px;
+  left: 250px;
+  z-index: -1000;
+}
