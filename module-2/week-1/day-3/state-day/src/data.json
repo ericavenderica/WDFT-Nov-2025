@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Ragnar",
+    "age": 4,
+    "image": "./assets/ragnar.png",
+    "owner": {
+      "name": "Joshua",
+      "address": {
+        "number": 123,
+        "street": "France Way",
+        "country": "France"
+      }
+    },
+    "type": "Cat",
+    "wonAward": true
+  }
+]
