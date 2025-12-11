@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background-color: rgb(151, 42, 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+nav img {
+  height: 50%;
+}
+a {
+  text-decoration: none;
+  color: greenyellow;
+  margin-right: 8px;
+}
+.active {
+  border: 1px solid blue;
+  color: blueviolet;
+  text-shadow: 5px 5px 10px black;
+}
+main {
+  min-height: 70vh;
+}
+.pet-card {
+  border: 1px solid white;
+  height: 200px;
+}
+.pet-card img {
+  height: 80%;
+}
