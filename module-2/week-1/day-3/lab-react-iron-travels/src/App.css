@@ -1,0 +1,41 @@
+.trip-card {
+  border: 2px solid white;
+  margin: 5px;
+  padding: 5px;
+  min-height: 45vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.trip-card img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+}
+.trip-card section {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+.deal {
+  background-color: green;
+  color: black;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.premium {
+  background-color: blue;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* .buttons-container {
+  background-color: aqua;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+} */
